@@ -27,6 +27,9 @@ body {
 
 .main {
     flex: 1 0 auto;
+    text-align: center;
+    margin-bottom: 0.6em;
+
 }
 
 .header, .footer {
@@ -38,6 +41,7 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 /* Title */
@@ -72,14 +76,20 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    padding-top: 0.6em;
 }
 
 .footer a {
     color: #222;
 }
 
+.footer p {
+    max-width: max-content;
+}
+
 .footer .social {
     font-size: 2rem;
+    margin-right: 10px;
 }
 
 /* Typografy */
@@ -94,11 +104,15 @@ p, td, th, li, dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    max-width: 50%;
+    margin-left: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
+    border-bottom: 1px solid;
+    padding-bottom: 0.6em;
 }
 
 img {
