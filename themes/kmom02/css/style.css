@@ -6491,7 +6491,12 @@ pre code {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -6508,7 +6513,7 @@ p {
   margin-bottom: 1.4em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1300px) {
   html {
     font-size: 112.5%;
   }
@@ -6522,25 +6527,28 @@ body {
 
 .main {
   flex: 1 0 auto;
-  width: 64em;
   margin: 2em auto;
+  width: 45em;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1050px) {
   .main {
     width: 96%;
   }
 }
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-between;
 }
 
-.title, .logo {
+.title,
+.logo {
   padding: 3em 3em 3em 0;
 }
 
@@ -6582,4 +6590,55 @@ body {
 .footer .social {
   display: grid;
   font-size: 2rem;
+}
+
+.technology-container {
+  display: grid;
+  grid-column: span 3;
+  gap: 2em 2em;
+  justify-content: center;
+}
+
+.technology-container .technology {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  height: 2em;
+  padding: 2em;
+  background-image: linear-gradient(to bottom right, #4fa0ef, #fff);
+  color: #333;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.technology-container a {
+  text-decoration: none;
+  width: 250px;
+  text-align: center;
+}
+
+.technology-article {
+  display: flex;
+}
+
+.sidebar {
+  margin-right: 40px;
+  border-right: groove;
+  width: 20%;
+  padding-right: 10px;
+}
+
+@media (min-width: 1055px) {
+  .technology-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 700px) {
+  .technology-container h1,
+.technology-container p {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767px) {
+  .technology-article .sidebar {
+    display: none;
+  }
 }
