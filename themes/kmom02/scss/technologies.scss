@@ -1,0 +1,52 @@
+.technology-container {
+    display: grid;
+    grid-column: span 3;
+    gap: 2em 2em;
+    justify-content: center;
+}
+
+.technology-container .technology {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+    height: 2em;
+    padding: 2em;
+    background-image: linear-gradient(to bottom right, #4fa0ef, $font-alternative-color);
+    color: $font-color;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.technology-container a {
+    text-decoration: none;
+    width: 250px;
+    text-align: center;
+}
+
+.technology-article {
+    display: flex;
+}
+
+.sidebar {
+    margin-right: 40px;
+    border-right: groove;
+    width: 20%;
+    padding-right: 10px;
+}
+
+@media (min-width: 1055px) {
+    .technology-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 700px) {
+    .technology-container h1,
+    .technology-container p {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .technology-article .sidebar {
+        display: none;
+    }
+}
