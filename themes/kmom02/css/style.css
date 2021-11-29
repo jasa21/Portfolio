@@ -6528,7 +6528,6 @@ body {
 .main {
   flex: 1 0 auto;
   margin: 2em auto;
-  width: 45em;
 }
 
 .header,
@@ -6536,15 +6535,17 @@ body {
   flex: 0 0 auto;
 }
 
+/*
 @media (max-width: 1050px) {
-  .main {
-    width: 96%;
-  }
-}
+    .main {
+        width: 96%;
+    }
+}*/
 .header,
 .site-header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .title,
@@ -6556,7 +6557,7 @@ body {
   font-style: italic;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 870px) {
   .title {
     padding: 1em 1em 1em 0;
   }
@@ -6626,12 +6627,11 @@ body {
   padding-right: 10px;
 }
 
-@media (min-width: 1055px) {
+@media (min-width: 870px) {
   .technology-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
-@media (min-width: 700px) {
+
   .technology-container h1,
 .technology-container p {
     grid-column: span 3;

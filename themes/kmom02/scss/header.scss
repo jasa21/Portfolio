@@ -2,6 +2,7 @@
 .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .title,
@@ -13,7 +14,7 @@
     font-style: italic;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 870px) {
     .title {
         padding: 1em 1em 1em 0;
     }
