@@ -6523,8 +6523,8 @@ body {
   flex-direction: column;
   /*
   background-color: $background-color;*/
-  color: #638b8f;
-  background: linear-gradient(#dbcdc3, #fffefc);
+  color: #c2c1c0;
+  background: linear-gradient(#121212, #121212);
 }
 
 .main {
@@ -6563,7 +6563,7 @@ body {
 
 .nav a,
 .nav-toggle {
-  color: #638b8f;
+  color: #d6d5d4;
 }
 
 @media (max-width: 870px) {
@@ -6584,7 +6584,7 @@ body {
   justify-content: space-between;
   height: 200px;
   padding: 3em;
-  background-color: #8f7d71;
+  background-color: #5e5e5e;
   color: #fffefc;
   text-decoration: none;
 }
@@ -6613,8 +6613,8 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
   height: 2em;
   padding: 2em;
-  background-image: linear-gradient(to bottom right, #dbcdc3, #fffefc);
-  color: #638b8f;
+  background-image: linear-gradient(to bottom right, #5c2d55, #5c2d55);
+  color: #c2c1c0;
   border-radius: 10px;
   font-size: 1.5rem;
 }

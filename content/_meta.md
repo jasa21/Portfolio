@@ -5,5 +5,7 @@ Social:
     - title: Link till sidans github repo.
       url: https://github.com/jasa21/Portfolio
       icon: fab fa-github
-      a: fas fa-award
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
 ---

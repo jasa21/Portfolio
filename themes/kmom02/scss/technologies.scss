@@ -9,7 +9,7 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
     height: 2em;
     padding: 2em;
-    background-image: linear-gradient(to bottom right, #4fa0ef, $font-alternative-color);
+    background-image: linear-gradient(to bottom right, $tech-box-color, $font-alternative-color);
     color: $font-color;
     border-radius: 10px;
     font-size: 1.5rem;

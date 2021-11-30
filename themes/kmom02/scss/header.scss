@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 }
 
+.site-header a {
+    filter: grayscale(50%);
+}
+
 .title,
 .logo {
     padding: 3em 3em 3em 0;
@@ -12,6 +16,11 @@
 
 .title p {
     font-style: italic;
+}
+
+.nav a,
+.nav-toggle {
+    color: $nav-font-color;
 }
 
 @media (max-width: 870px) {

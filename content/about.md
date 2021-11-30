@@ -1,5 +1,5 @@
 ---
-Title: OM
+Title: Om
 Description: En sida om vilka tekniker jag använder
 ---
 
