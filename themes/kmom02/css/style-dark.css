@@ -6548,10 +6548,6 @@ body {
   flex-wrap: wrap;
 }
 
-.site-header a {
-  filter: grayscale(50%);
-}
-
 .title,
 .logo {
   padding: 3em 3em 3em 0;
@@ -6587,6 +6583,8 @@ body {
   background-color: #5e5e5e;
   color: #fffefc;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .footer a {
@@ -6650,4 +6648,59 @@ body {
   .technology-article .sidebar {
     display: none;
   }
+}
+.analysis-container {
+  display: grid;
+  grid-column: span 3;
+  gap: 2em 2em;
+  justify-content: center;
+}
+
+.analysis-container .analysis {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  height: 2em;
+  padding: 2em;
+  background-image: linear-gradient(to bottom right, #5c2d55, #5c2d55);
+  color: #c2c1c0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.analysis-container a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.analysis-article {
+  display: flex;
+}
+
+.sidebar {
+  margin-right: 40px;
+  border-right: groove;
+  width: 20%;
+  padding-right: 10px;
+}
+
+.article {
+  width: 50%;
+}
+
+@media (min-width: 870px) {
+  .analysis-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .analysis-container h1,
+.analysis-container p {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767px) {
+  .analysis-article .sidebar {
+    display: none;
+  }
+}
+.site-header a {
+  filter: grayscale(50%);
 }
